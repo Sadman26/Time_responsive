@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    background-color: goldenrod;
+}
+.app {
+    cursor: pointer;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 90px;
+    animation-name: lol;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+@keyframes lol {
+    0% {
+        transform: translateY(19px);
+    }
+
+    100% {
+        transform: translateY(-9px);
+    }
+}
+.icon{
+    font-size: 70px;
+    text-align: center;
+}
+.icon h3{
+    font-size: 40px;
+}
+.icon2{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(12, 255, 251);
+    }
+    h1{
+        font-size: 60px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .icon2{
+        display: block;
+        font-size: 70px;
+        text-align: center;
+    }
+    .icon{
+        display: none;
+    }
+  }
